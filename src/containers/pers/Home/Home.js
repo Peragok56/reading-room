@@ -8,7 +8,27 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-          <h1>Home</h1>
+          <div className='left-block'>
+            <img src='/image/hat.jpg'/>
+            <h1>Админ</h1>
+          </div>
+          <div className='right-block'>
+            <div className='card-list'>
+                <div className='card'>
+                    <strong>*</strong>
+                </div>
+                <div className='card'>
+                    <strong>ll</strong>
+                </div>
+                <div className='card'>
+                    <strong>O</strong>
+                </div>
+                <div className='card'>
+                    <strong>li</strong>
+                </div>
+            </div>
+              
+          </div>
       </React.Fragment>
     );
   }
