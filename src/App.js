@@ -6,12 +6,14 @@ import Auth from "./containers/Auth/Auth";
 import Main from "./containers/Main/Main";
 import { connect } from "react-redux";
 import { autoLogin } from "./store/actions/Auth";
+import Reg from "./containers/Reg/Reg";
 
 class App extends Component {
   componentDidMount() {
     setInterval(() => {
       this.props.autoLogin();
     }, 1);
+    console.log(this.props.isAuthenticated);
   }
 
   render() {
@@ -23,8 +25,10 @@ class App extends Component {
               <Route path='/auth' exact component={Auth} />
               <Route
                 path='/'
+                exact
                 render={() => (user ? <Redirect to='/auth' /> : <Main />)}
               />
+              <Route path='/reg' exact component={Reg} />
             </Switch>
           );
         case true:
@@ -35,6 +39,13 @@ class App extends Component {
                 exact
                 render={() =>
                   user ? <Redirect to='/' /> : <Redirect to='/auth' />
+                }
+              />
+              <Route
+                path='/reg'
+                exact
+                render={() =>
+                  user ? <Redirect to='/' /> : <Redirect to='/reg' />
                 }
               />
               <Route path='/' exact component={Main} />
