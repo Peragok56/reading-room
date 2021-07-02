@@ -7,6 +7,7 @@ import Main from "./containers/Main/Main";
 import { connect } from "react-redux";
 import { autoLogin } from "./store/actions/Auth";
 import Reg from "./containers/Reg/Reg";
+import Pers from "./containers/pers/Pers";
 
 class App extends Component {
   componentDidMount() {
@@ -23,12 +24,17 @@ class App extends Component {
           return (
             <Switch>
               <Route path='/auth' exact component={Auth} />
+              <Route path='/reg' exact component={Reg} />
               <Route
                 path='/'
                 exact
                 render={() => (user ? <Redirect to='/auth' /> : <Main />)}
               />
-              <Route path='/reg' exact component={Reg} />
+              <Route
+                path='/pers'
+                exact
+                render={() => (user ? <Redirect to='/auth' /> : <Pers />)}
+              />
             </Switch>
           );
         case true:
@@ -49,6 +55,7 @@ class App extends Component {
                 }
               />
               <Route path='/' exact component={Main} />
+              <Route path='/pers' exact component={Pers} />
             </Switch>
           );
         default:

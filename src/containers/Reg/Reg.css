@@ -1,0 +1,39 @@
+.regForm {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    padding: 40px;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+.regForm > h1 {
+    width: max-content;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.regForm > input {
+    margin: 5px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.regForm > input::placeholder {
+    color: #000;
+}
+
+.regForm > button {
+    background: rgb(0, 0, 255);
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 5px;
+}
