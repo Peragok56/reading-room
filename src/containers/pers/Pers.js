@@ -6,7 +6,7 @@ import Business from "./Business/Business";
 
 class Pers extends Component {
   state = {
-    block: 'business'
+    block: 'fund'
   }
   componentDidMount() {
     document.title = "Главная";

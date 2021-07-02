@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './Fund.css'
+import activeFund from "./activeFund/activeFund";
 
 class Fund extends Component {
   componentDidMount() {
@@ -8,7 +9,12 @@ class Fund extends Component {
   render() {
     return (
       <React.Fragment>
-          <h1>Fund</h1>
+          <div className='Fund'>
+            <h1>Фонд 1</h1>
+          </div>
+          <div className='Fund'>
+            <h1>Фонд 2</h1>
+          </div>
       </React.Fragment>
     );
   }

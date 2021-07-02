@@ -1,0 +1,12 @@
+main{
+    display: flex;
+    align-items: center;
+}
+
+.Bsu{
+    width: 80%;
+    margin-top: 45px;
+    text-align: center;
+    border: solid 2px black;
+    padding: 24px 0px;
+}

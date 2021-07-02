@@ -8,7 +8,12 @@ class Business extends Component {
   render() {
     return (
       <React.Fragment>
-          <h1>Business</h1>
+          <div className='Bsu'>
+            <h1>Дело 1</h1>
+          </div>
+          <div className='Bsu'>
+            <h1>Дело 2</h1>
+          </div>
       </React.Fragment>
     );
   }

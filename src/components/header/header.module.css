@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    background-color: rgb(104, 183, 207);
+}
+
+.Nav a{
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    border: 0;
+    border: solid 1px rgb(255, 255, 255);
+    padding: 4px 8px;
+    color: black;
+}
