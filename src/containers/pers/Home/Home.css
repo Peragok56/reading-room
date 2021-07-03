@@ -1,0 +1,59 @@
+.block{
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+}
+
+.about{
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+.left-about{
+    width: 40%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    padding: 8px 25px;
+    border-right: 2px solid #fff;
+}
+
+.left-about img{
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.left-about h2{
+    width: 100%;
+}
+
+.left-about h1{
+    width: 100%;
+    background-color: #dfdfdfab;
+    color: black;
+    padding: 5px 8px;
+    border-radius: 25px;
+}
+
+.right-about{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-gap: 10px;
+    padding: 5px 25px;
+}
+
+.right-about .card{
+    width: 60%;
+    height:max-content;
+}
+
+.card img{
+    width: 100%;
+}
