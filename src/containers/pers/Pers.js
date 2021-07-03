@@ -3,11 +3,12 @@ import './Pers.css'
 import Home from './Home/Home'
 import Fund from "./Fund/Fund";
 import Opis from "./Opis/Opis"
+import Delo from "./Delo/Delo";
 import Business from "./Business/Business";
 
 class Pers extends Component {
   state = {
-    block: 'opis'
+    block: 'home'
   }
   componentDidMount() {
     document.title = "Главная";
@@ -23,6 +24,8 @@ class Pers extends Component {
           return <Business />
         case 'opis':
           return <Opis />
+        case 'delo':
+          return <Delo />
       }
     }
     return (
